@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .row {
+    border-radius: 5px;
+    border-color: black;
+    border-style: double;
+} */
+
+.col{
+    border-radius: 30px;
+    border-color: black;
+    border-style: double;
+}
+
+#imagen-cv{
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+/* #caja-perfil{ */
+.modelo-caja{
+    margin-top: 20px ;
+    margin-bottom: 30px;
+    border: 5px green;
+    background-color: #0071bc;
+    border-style: groove;
+    border-radius: 70px;
+    padding: 10px;
+    width: 300px;
+    /* max-width: 300px; */
+}
+
+#caja-perfil-foto{
+    text-align: center;
+}
+
+/* Centro la informacion personal */
+
+#caja-perfil-infoPersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#datos-personales{
+    list-style:none;
+}
+
+#caja-experiencia>h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
