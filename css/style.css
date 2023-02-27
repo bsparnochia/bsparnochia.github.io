@@ -16,12 +16,14 @@
 
 #imagen-cv{
     text-align: center;
-    border-radius: 15px;
+    border-radius: 150px;
+    border: 5px gray solid;
     width: 200px;
     height: 200px;
+    margin: 20px;
 }
 
-/* #caja-perfil{ */
+/* modelado de las cajas */
 .modelo-caja{
     margin-top: 20px ;
     margin-bottom: 30px;
@@ -31,9 +33,9 @@
     border-radius: 70px;
     padding: 10px;
     width: 300px;
-    /* max-width: 300px; */
 }
 
+/* modelado de la caja que contiene la foto */
 #caja-perfil-foto{
     text-align: center;
 }
@@ -50,7 +52,17 @@
     list-style:none;
 }
 
-#caja-experiencia>h2{
+.modelo-caja>h2{
     text-align: center;
     margin-bottom: 30px;
+}
+
+/* botones */
+
+#footer{
+    text-align: center;
+}
+
+#btn-volver-arriba{
+    color:blue
 }
