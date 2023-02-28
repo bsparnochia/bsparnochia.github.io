@@ -1,19 +1,15 @@
-* {
-    box-sizing: border-box;
+/*fuentes del portafolio */
+*{
+    font-family: 'Poppins', sans-serif;
+    color:wheat;
 }
 
-/* .row {
-    border-radius: 5px;
-    border-color: black;
-    border-style: double;
-} */
-
-.col{
-    border-radius: 30px;
-    border-color: black;
-    border-style: double;
+/* fondo del portafolio*/
+body{
+    background-image: url('/images/background.jpg');
 }
 
+/* configuración foto de perfil cv */
 #imagen-cv{
     text-align: center;
     border-radius: 150px;
@@ -25,14 +21,21 @@
 
 /* modelado de las cajas */
 .modelo-caja{
-    margin-top: 20px ;
+    margin-top: 50px ;
     margin-bottom: 30px;
     border: 5px green;
-    background-color: #0071bc;
+    background-color: rgba(28, 93, 165, 1);
+    filter: alpha(opacity=50);
     border-style: groove;
     border-radius: 70px;
     padding: 10px;
-    width: 300px;
+    width: 600px;
+}
+
+/*selección de caja */
+.modelo-caja:hover{
+    border-color: gold;
+    background-color: green;
 }
 
 /* modelado de la caja que contiene la foto */
@@ -40,31 +43,53 @@
     text-align: center;
 }
 
-/* Centro la informacion personal */
-
-#caja-perfil-infoPersonal{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
+/* desactivo puntos del listado para personalizar iconos */
 
 #datos-personales{
     list-style:none;
 }
 
+/* centrado de listado */
+
+.listado-centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* separación de iconos */
+
+.icono-listado::before{
+    margin-right: 10px;
+}
+
+/*Organización de titulos en modelo-caja*/
+
 .modelo-caja>h2{
-    text-align: center;
     margin-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #D75019 ;
+    border-radius: 50px;
 }
 
-/* botones */
+/* botón para volver al arriba */
 
-#footer{
-    text-align: center;
+#btn-arriba {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
 }
 
-#btn-volver-arriba{
-    color:blue
+#btn-arriba:hover {
+  background-color: #555;
 }
-
-/*CAMBIO PROBANDO QUE FUNCIONA EL DEPLOY*/
