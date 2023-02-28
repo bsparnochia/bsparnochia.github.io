@@ -90,6 +90,7 @@ body{
   font-size: 18px; 
 }
 
+/* coloreado boton volver arriba*/
 #btn-arriba:hover {
   background-color: #555;
 }
